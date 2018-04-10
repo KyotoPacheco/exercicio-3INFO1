@@ -1,0 +1,63 @@
+body {
+	margin                : 0;
+}
+h1 {
+	text-align            : center; 
+}
+h3 {
+	text-align            : center; 
+}
+.menu {
+	background-color      : #f1f1f1;
+}
+.white {
+	text-align            : center;
+}
+.link {
+	text-align            : center;
+}
+.link:hover {
+	text-decoration-line  : none;
+	text-decoration       : none;
+	background-color      : white;
+
+}
+#cont {
+	background-color      : #f1f1f1; 
+}
+#spot {
+	padding-top           : 20px;
+}
+#spot2 {
+	padding-top           : 16px;
+}
+.danger {
+	border-color          : #000 !important;
+	border-radius         : 3px !important;
+}
+#ph {
+	text-align            : center;
+}
+#mess {
+	text-align            : center; 
+}
+#form {
+	position              : relative;
+}
+.sair {
+	text-align            : center;
+}
+.bg-dark {
+	background-color      : #f1f1f1 !important;
+}
+.footer {
+	position              : fixed;
+	width                 : 100%;
+	bottom                : 0;
+}
+p {
+	color                 : #000;
+	font-size: 25px;
+}
+
+

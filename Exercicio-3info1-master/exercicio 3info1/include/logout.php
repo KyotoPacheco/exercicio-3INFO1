@@ -1,0 +1,1 @@
+<a class="btn btn-md btn-primary col-xs-12 col-sm-12 col-md-1 col-lg-1" id="spot2" href="app/controllers/controleAcao.php?action=sair">Logout</h1></a>
