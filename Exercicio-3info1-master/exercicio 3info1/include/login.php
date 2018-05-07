@@ -3,7 +3,7 @@
 <br>
 <div class="row">
     <div class="span12" style="text-align:center; margin: 0 auto;">
-        <form id="form" class="form-horizontal form-control" style="width: 400px; margin: 0 auto;" method="post" action="app/controllers/controleAcao.php?action=login">
+        <form id="form" class="form-horizontal form-control" style="width: 400px; margin: 0 auto;" method="post" action="app/controllers/categoria.php?action=login">
             <fieldset>
                 <legend>LOGIN</legend>
 

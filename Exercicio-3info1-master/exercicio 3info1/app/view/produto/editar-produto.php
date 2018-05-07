@@ -5,7 +5,7 @@
     <br>
     <div class="row">
         <div class="span12" style="text-align: center; margin: 0 auto;">
-            <form class="form-horizontal form-control" style="width: 400px; margin: 0 auto;" method="post" action="controleAcao.php?action=editarprod&codigo=<?= $produtos->getId(); ?>">
+            <form class="form-horizontal form-control" style="width: 400px; margin: 0 auto;" method="post" action="../../controllers/controleAcao.php?action=editarprod&codigo=<?= $produtos->getId(); ?>">
                 <fieldset>
                     <legend>Editar Produto</legend>
 

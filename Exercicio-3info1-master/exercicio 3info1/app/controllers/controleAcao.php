@@ -7,6 +7,7 @@
  */
 
 require_once '../models/CategoriaCrud.php';
+require_once '../models/ProdutoCrud.php';
 
     if (isset($_GET['action']) and $_GET['action'] == 'login')
     {
@@ -39,15 +40,15 @@ require_once '../models/CategoriaCrud.php';
         header('location:../../index.php');
 
     }
-    elseif (isset($_GET['action']) and $_GET['action'] == 'cadastrar')
+    elseif (isset($_GET['action']) and $_GET['action'] == 'cadastrarcat')
     {
         $cat = new Categoria('?', $_POST['titulo'], $_POST['descricao']);
 
         $catcrud = new CategoriaCrud();
 
-        $catcrud->InsertCategoria($cat);
+        $catcrud->insertCategoria($cat);
     }
-    elseif (isset($_GET['action']) and $_GET['action'] == 'editar' and isset($_GET['codigo']))
+    elseif (isset($_GET['action']) and $_GET['action'] == 'editarcat' and isset($_GET['codigo']))
     {
         $codigo = $_GET['codigo'];
 
@@ -55,16 +56,36 @@ require_once '../models/CategoriaCrud.php';
 
         $catcrud = new CategoriaCrud();
 
-        $catcrud->UpdateCategoria($cat);
+        $catcrud->updateCategoria($cat);
         echo "loading page ...";
     }
-    elseif (isset($_GET['action']) and $_GET['action'] == 'excluir' and isset($_GET['codigo']))
+    elseif (isset($_GET['action']) and $_GET['action'] == 'excluircat' and isset($_GET['codigo']))
     {
         $codigo = $_GET['codigo'];
 
         $catcrud = new CategoriaCrud();
 
-        $catcrud->DeleteCategoria($codigo);
+        $catcrud->deleteCategoria($codigo);
 
         echo "loading page ... $codigo";
+    }
+    elseif (isset($_GET['action']) and $_GET['action'] == 'cadastrarprod')
+    {
+        echo 'aqui';
+        $prod = new Produto('', $_POST['titulo'], $_POST['descricao'], '', $_POST['preco'], $_POST['idcat']);
+
+        $prodcrud = new ProdutoCrud();
+
+        $prodcrud->insertProduto($prod);
+
+        echo "loading page ...";
+    }
+
+   elseif (isset($_GET['action']) and $_GET['action'] == 'excluirprod' and isset($_GET['codigo']))
+    {
+        $codigo = $_GET['codigo'];
+
+        $prodcrud = new ProdutoCrud();
+
+        $prodcrud->deleteProduto($codigo);
     }

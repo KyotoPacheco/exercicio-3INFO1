@@ -5,10 +5,6 @@
  * Date: 08/04/2018
  * Time: 13:10
  */
-error_reporting(0);
-require_once "../view/template/cabecalho.php";
-
-
 ?>
 </ul>
 </div>
@@ -16,7 +12,7 @@ require_once "../view/template/cabecalho.php";
     <br>
     <div class="row">
         <div class="span12" style="text-align: center; margin: 0 auto;">
-            <form class="form-horizontal form-control" style="width: 400px; margin: 0 auto;" method="post" action="controleAcao.php?action=cadastrarcat">
+            <form class="form-horizontal form-control" style="width: 400px; margin: 0 auto;" method="post" action="../../controllers/categoria.php?action=cadastrarcat">
                 <fieldset>
                     <legend>Cadastrar Categoria</legend>
 
@@ -48,4 +44,4 @@ require_once "../view/template/cabecalho.php";
     <br>
     <br>
     <br>
-<?php require_once "../view/template/rodape.php"?>
+<?php require_once "../view/template/rodape.php" ?>

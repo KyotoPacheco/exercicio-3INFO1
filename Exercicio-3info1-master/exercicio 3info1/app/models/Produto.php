@@ -25,7 +25,7 @@ class Produto
 
 	//Fazer arquivo de testes da classe
 
-	public function __Construct( $nome, $descricao, $foto, $preco, $id_categoria, $id = null){
+	public function __Construct($id = null, $nome, $descricao, $foto, $preco, $id_categoria ){
 		$this->id = $id;
 		$this->nome = $nome;
 		$this->descricao = $descricao;

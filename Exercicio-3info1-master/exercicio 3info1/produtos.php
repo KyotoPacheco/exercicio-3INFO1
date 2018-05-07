@@ -41,22 +41,28 @@
 		</div>			
 <br>
 <br>
-<?php	
+<?php
+    require_once "app/models/ProdutoCrud.php";
 	$escolhido = 0;
 	$busca = 0;
 
 	if (isset($_GET['acao']) and $escolhido = $_GET['acao']) {
-		echo "<h1 style='color: #007bff;' id='mess'>$escolhido</h1>";
+
+	    echo "<h1 style='color: #007bff;' id='mess'>$escolhido</h1>";
+
 	}elseif (isset($_POST['busca']) and $buscar = $_POST['busca']) {
 		echo "<h1 id='mess'>O termo $buscar não foi encontrado</h1>";
 	}
 
 	if (!isset($_SESSION['user'])) {
-		require_once "include/login.php";
+
+	    require_once "include/login.php";
 
 	}elseif (isset($_SESSION['user'])) {
-			$user = $_SESSION['user'];
-            echo "<h1>Olá $user ";
+
+	    $user = $_SESSION['user'];
+
+	    echo "<h1>Olá $user ";
 
 	}
     include 'app/view/template/rodape.php';
